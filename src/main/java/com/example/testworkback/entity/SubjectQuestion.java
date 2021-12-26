@@ -20,6 +20,7 @@ import java.util.Set;
 @JsonIdentityInfo(generator= ObjectIdGenerators.PropertyGenerator.class, property="id")
 @Getter
 @Setter
+                                    //это у нас тематический блок воаросов
 public class SubjectQuestion {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

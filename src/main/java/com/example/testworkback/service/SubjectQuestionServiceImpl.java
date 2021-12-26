@@ -1,12 +1,11 @@
 package com.example.testworkback.service;
-
 import com.example.testworkback.entity.SubjectQuestion;
 import com.example.testworkback.entity.SubjectQuestionRepo;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-@Service
+@Service                                                //просто сервис
 public class SubjectQuestionServiceImpl implements SubjectQuestionService{
 
     SubjectQuestionRepo questionRepo;

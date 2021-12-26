@@ -20,6 +20,7 @@ import javax.persistence.*;
 @Accessors(chain = true)
 @Getter
 @Setter
+                                    // тут хранятся ответы на все вопросы :Р
 public class Response {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

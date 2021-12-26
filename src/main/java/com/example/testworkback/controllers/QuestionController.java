@@ -20,7 +20,8 @@ public class QuestionController {
         this.subjectQuestionService = subjectQuestionService;
     }
 
-    @GetMapping("/questions/{id}")
+    @GetMapping("/questions/{id}")      //по id мы вытаскиваем нужную тему(они веди могут быть разными)
+                                            // в базе забита только одна тема, её id - 1
     public ResponseEntity<SubjectQuestion> getQuestions(@PathVariable("id") Long id) {
         Optional<SubjectQuestion> question = subjectQuestionService.findById(id);
         return new ResponseEntity<>(question.get(), HttpStatus.OK);

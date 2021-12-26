@@ -21,6 +21,7 @@ import java.util.Set;
 @Accessors(chain = true)
 @Getter
 @Setter
+                                    // а это блок вопросов
 public class Questions {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
