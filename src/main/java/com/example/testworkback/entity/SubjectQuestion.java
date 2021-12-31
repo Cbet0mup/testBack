@@ -7,14 +7,11 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.experimental.Accessors;
-
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
 @NoArgsConstructor
-@AllArgsConstructor
 @Table(name = "subject")
 @JsonIgnoreProperties({"ignoreUnknown = true"})
 @JsonIdentityInfo(generator= ObjectIdGenerators.PropertyGenerator.class, property="id")
